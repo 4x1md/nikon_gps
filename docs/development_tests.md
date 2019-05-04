@@ -74,7 +74,7 @@ Logic level shifting was tested by injecting pulses to the input of U2. Pulse fr
 
 ![Power-on without GPS](../images/development_tests/SDS00025.png)
 
-**Output pulses with 2.6V input**
+**Logic level shifting with 2.475V input**
 
 One more issue I tried to test is response of the level shifting IC to LOW=0.4V and HIGH=2.475V pulses. The values were taken from the datasheet of the GPS module. Later, tests with GPS module assembled demonstrated that these pulses don't emulate the real-world voltage levels.
 
