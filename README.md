@@ -39,6 +39,18 @@ TBD
 
 TBD
 
+## Development Tests
+
+Please refer to [development_tests.md](docs/development_tests.md) for details.
+
+## Field Tests
+
+TBD
+
+## Conclusions
+
+TBD
+
 ## Links
 
 1. [A low-cost GPS module for Nikon DSLRs](https://github.com/marmat/nikon-gp1-diy) by Martin Matysiak
