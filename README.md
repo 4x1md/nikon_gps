@@ -23,21 +23,21 @@ The PCB was designed in KiCAD.
 
 ### PCB schematics
 
-![PCB](../images/schematic.png)
+![PCB](images/schematic.png)
 
 ### 3D Model
 
-![PCB](../images/3d_model_1.png)
+![PCB](images/3d_model_1.png)
 
-![PCB](../images/3d_model_2.png)
+![PCB](images/3d_model_2.png)
 
 ## BOM Variants
 
+TBD
 
 ## Assembled Device
 
-
-
+TBD
 
 ## Links
 
