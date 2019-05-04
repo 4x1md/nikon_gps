@@ -165,6 +165,7 @@ This test shows that the real logic levels of the ORG1410-PM04 UART is 1.8V. Acc
 
 ![Power-on without GPS](../images/development_tests/SDS00051.png)
 
+Channel  | Signal
 --- | ---
 **CH1:** | GPS_TX (C2)
 **CH4:** | GPS_OUT
