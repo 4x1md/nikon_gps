@@ -76,7 +76,16 @@ Logic level shifting was tested by injecting pulses to the input of U2. Pulse fr
 
 **Logic level shifting with 2.475V input**
 
-One more issue I tried to test is response of the level shifting IC to LOW=0.4V and HIGH=2.475V pulses. The values were taken from the datasheet of the GPS module. Later, tests with GPS module assembled demonstrated that these pulses don't emulate the real-world voltage levels.
+According to ORG1411 datasheet, it has the following logic levels:
+
+Parameter | Symbol | Min | Max | Unit
+---|---|---|---|---
+Output Voltage Low State | V<sub>OL</sub> | | 0.4 | V
+Output Voltage High State | V<sub>OH</sub> | 0.75*Vcc | | V
+
+Vcc in this circuit is 3.3V, therefore, V<sub>HIGH</sub> is 2.475V.
+
+Later, tests with GPS module demonstrated that these pulses don't reflect the real-world voltage levels.
 
 ![Power-on without GPS](../images/development_tests/SDS00028.png)
 
@@ -157,7 +166,7 @@ Channel  | Signal
 **CH1:** | GPS_TX (C2)
 **CH4:** | GPS_OUT
 
-This test shows that the real logic levels of the ORG1410-PM04 UART is 1.8V. According to the SN74LV1T126DBVR datasheet, it is not supposed to work with 1.8V input when powered with 5.0V. However, this test shows that it works well.
+This test shows that the real logic levels of the ORG1410-PM04 UART is 1.8V. According to the SN74LV1T126DBVR datasheet, it is not supposed to work with 1.8V input when powered with 5.0V. This test shows that it works well, however, its performance can't be guaranteed.
 
 ### UART waveforms
 

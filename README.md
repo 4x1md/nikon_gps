@@ -1,6 +1,44 @@
 # DIY GPS Module for Nikon DSLR
 GPS module for Nikon DSLR.
 
+## Overvies
+
+TBD
+
+## Reference Projects
+
+TBD
+
+## Parts
+
+TBD
+
+## Mechanics
+
+TBD
+
+## PCB Design
+
+The PCB was designed in KiCAD.
+
+### PCB schematics
+
+![PCB](../images/schematic.png)
+
+### 3D Model
+
+![PCB](../images/3d_model_1.png)
+
+![PCB](../images/3d_model_2.png)
+
+## BOM Variants
+
+
+## Assembled Device
+
+
+
+
 ## Links
 
 1. [A low-cost GPS module for Nikon DSLRs](https://github.com/marmat/nikon-gp1-diy) by Martin Matysiak
