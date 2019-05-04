@@ -84,3 +84,87 @@ Channel  | Signal
 --- | ---
 **CH1:** | GPS_TX (C2)
 **CH4:** | GPS_OUT
+
+
+## Tests with the GPS module
+
+The same tests were performed with the GPS module assembled.
+
+### Power-on
+
+![Power-on without GPS](../images/development_tests/SDS00032.png)
+
+Channel  | Signal
+--- | ---
+**CH1:** | 5V
+**CH2:** | 3.3V_EN (U4.3)
+**CH3:** | 3.3V
+**CH4:** | GPS_OUT
+
+### Power-off
+
+The pulses on the GPS_OUT line are UART transmissions of the GPS module.
+
+![Power-on without GPS](../images/development_tests/SDS00057.png)
+
+![Power-on without GPS](../images/development_tests/SDS00058.png)
+
+Channel  | Signal
+--- | ---
+**CH1:** | 5V
+**CH2:** | 3.3V_EN (U4.3)
+**CH3:** | 3.3V
+**CH4:** | GPS_OUT
+
+### On/off button
+
+**Turning 3.3V on**
+
+![Power-on without GPS](../images/development_tests/SDS00038.png)
+
+Channel  | Signal
+--- | ---
+**CH2:** | ON_SW (U3.1)
+**CH3:** | 3.3V_EN (U4.3)
+**CH4:** | 3.3V
+
+**Turning 3.3V off**
+
+![Power-on without GPS](../images/development_tests/SDS00040.png)
+
+Channel  | Signal
+--- | ---
+**CH2:** | ON_SW (U3.1)
+**CH3:** | 3.3V_EN (U4.3)
+**CH4:** | 3.3V
+
+### Logic level shifting
+
+**Rise time**
+
+![Power-on without GPS](../images/development_tests/SDS00041.png)
+
+**Fall time**
+
+![Power-on without GPS](../images/development_tests/SDS00042.png)
+
+**Output pulses with 3.3V input**
+
+![Power-on without GPS](../images/development_tests/SDS00043.png)
+
+Channel  | Signal
+--- | ---
+**CH1:** | GPS_TX (C2)
+**CH4:** | GPS_OUT
+
+This test shows that the real logic levels of the ORG1410-PM04 UART is 1.8V. According to the SN74LV1T126DBVR datasheet, it is not supposed to work with 1.8V input when powered with 5.0V. However, this test shows that it works well.
+
+### UART waveforms
+
+![Power-on without GPS](../images/development_tests/SDS00045.png)
+
+![Power-on without GPS](../images/development_tests/SDS00051.png)
+
+--- | ---
+**CH1:** | GPS_TX (C2)
+**CH4:** | GPS_OUT
