@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Nikon_GPS)(type KiCad)(uri ${KIPRJMOD}/nikon_gps.pretty)(options "")(descr "Project related footprints"))
+)
