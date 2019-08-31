@@ -1,4 +1,4 @@
-# *nikon_gps.rev_a* directory
+# nikon_gps.rev_a
 
 This directory stores the revision A of the PCB converted to KiCAD 5.1.
 
