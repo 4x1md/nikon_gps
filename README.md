@@ -15,7 +15,9 @@ TBD
 
 ## Mechanics
 
-TBD
+![Mechanics](images/assembled_ver1/mech_1.jpg)
+
+![Mechanics](images/assembled_ver1/mech_2.jpg)
 
 ## PCB Design
 
@@ -31,13 +33,23 @@ The PCB was designed in KiCAD.
 
 ![PCB](images/3d_model_2.png)
 
+### Manufactured PCB
+
+![PCB](images/assembled_ver1/pcb.jpg)
+
 ## BOM Variants
 
 TBD
 
 ## Assembled Device
 
-TBD
+![Assembled](images/assembled_ver1/assembled_1.jpg)
+
+![Assembled](images/assembled_ver1/assembled_2.jpg)
+
+![Assembled](images/assembled_ver1/assembled_3.jpg)
+
+![Assembled](images/assembled_ver1/assembled_4.jpg)
 
 ## Development Tests
 
