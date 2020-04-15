@@ -57,7 +57,9 @@ Please refer to [development_tests.md](docs/development_tests.md) for details.
 
 ## Field Tests
 
-TBD
+![Field tests](images/field_tests_1.png)
+
+![Field tests](images/field_tests_2.png)
 
 ## Conclusions
 
