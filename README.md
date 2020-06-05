@@ -55,11 +55,11 @@ TBD
 
 ### Revision A Tests
 
-Please refer to [development-tests.md](docs/development-tests.md) for details.
+The tests were done in order to verify the assembled circuit. Refer to [development-tests.md](docs/development-tests.md) for details.
 
 ### ORG1411 GPS Module On/Off Tests
 
-Please refer to [wakeup-tests.md](docs/wakeup-tests.md) for details.
+The on/off sequence of the ORG1411 GPS module was tested in order to understand how to connect an external on/off button to the module. Refer to [wakeup-tests.md](docs/wakeup-tests.md) for details.
 
 ## Field Tests
 
