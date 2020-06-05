@@ -15,9 +15,9 @@ TBD
 
 ## Mechanics
 
-![Mechanics](images/assembled_ver1/mech_1.jpg)
+![Mechanics](images/pcb-rev-a-assembled/mech_1.jpg)
 
-![Mechanics](images/assembled_ver1/mech_2.jpg)
+![Mechanics](images/pcb-rev-a-assembled/mech_2.jpg)
 
 ## PCB Design
 
@@ -35,7 +35,7 @@ The PCB was designed in KiCAD.
 
 ### Manufactured PCB
 
-![PCB](images/assembled_ver1/pcb.jpg)
+![PCB](images/pcb-rev-a-assembled/pcb.jpg)
 
 ## BOM Variants
 
@@ -43,17 +43,23 @@ TBD
 
 ## Assembled Device
 
-![Assembled](images/assembled_ver1/assembled_1.jpg)
+![Assembled](images/pcb-rev-a-assembled/assembled_1.jpg)
 
-![Assembled](images/assembled_ver1/assembled_2.jpg)
+![Assembled](images/pcb-rev-a-assembled/assembled_2.jpg)
 
-![Assembled](images/assembled_ver1/assembled_3.jpg)
+![Assembled](images/pcb-rev-a-assembled/assembled_3.jpg)
 
-![Assembled](images/assembled_ver1/assembled_4.jpg)
+![Assembled](images/pcb-rev-a-assembled/assembled_4.jpg)
 
 ## Development Tests
 
-Please refer to [development_tests.md](docs/development_tests.md) for details.
+### Revision A Tests
+
+Please refer to [development-tests.md](docs/development-tests.md) for details.
+
+### ORG1411 GPS Module On/Off Tests
+
+Please refer to [wakeup-tests.md](docs/wakeup-tests.md) for details.
 
 ## Field Tests
 
