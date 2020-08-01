@@ -52,6 +52,13 @@ AUP series have Schmitt trigger inputs.
 
 1. 74LVC1G17
 
+## Diode
+
+Low Vf Schottky diode is requred.
+
+1. ON Semi NSR0340V2T1G
+2. ST BAS40-02V-V-G
+
 ## ON/OFF switch driver
 
 1. MAX16054

@@ -1,0 +1,1239 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DIY GPS for Nikon DSLR"
+Date "2019-08-31"
+Rev "B"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L nikon_gps-rescue:R R1
+U 1 1 5BB0D24B
+P 4400 1550
+F 0 "R1" H 4250 1575 50  0000 C CNN
+F 1 "10K" H 4250 1500 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 4330 1550 50  0001 C CNN
+F 3 "" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:+3.3V #PWR01
+U 1 1 5BB0D5D0
+P 4400 1300
+F 0 "#PWR01" H 4400 1150 50  0001 C CNN
+F 1 "+3.3V" H 4400 1440 50  0000 C CNN
+F 2 "" H 4400 1300 50  0001 C CNN
+F 3 "" H 4400 1300 50  0001 C CNN
+	1    4400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:+5V #PWR02
+U 1 1 5BB0D5EC
+P 9800 1250
+F 0 "#PWR02" H 9800 1100 50  0001 C CNN
+F 1 "+5V" H 9800 1390 50  0000 C CNN
+F 2 "" H 9800 1250 50  0001 C CNN
+F 3 "" H 9800 1250 50  0001 C CNN
+	1    9800 1250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2900 1800
+Text Label 2500 2400 0    60   ~ 0
+WAKEUP
+Text Label 2500 2200 0    60   ~ 0
+ON_OFF
+Text Label 4100 1800 0    60   ~ 0
+~CTS
+$Comp
+L nikon_gps-rescue:GND #PWR03
+U 1 1 5BC2045F
+P 10050 1850
+F 0 "#PWR03" H 10050 1600 50  0001 C CNN
+F 1 "GND" H 10050 1700 50  0000 C CNN
+F 2 "" H 10050 1850 50  0001 C CNN
+F 3 "" H 10050 1850 50  0001 C CNN
+	1    10050 1850
+	0    1    1    0   
+$EndComp
+NoConn ~ 4100 2000
+$Comp
+L nikon_gps-rescue:R R2
+U 1 1 5BC25077
+P 4800 2200
+F 0 "R2" V 4880 2200 50  0000 C CNN
+F 1 "33" V 4700 2200 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 4730 2200 50  0001 C CNN
+F 3 "" H 4800 2200 50  0001 C CNN
+	1    4800 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nikon_gps-rescue:Conn_01x03 J1
+U 1 1 5BC2557D
+P 10300 1850
+F 0 "J1" H 10300 2050 50  0000 C CNN
+F 1 "1x03 pads" H 10300 1650 50  0000 C CNN
+F 2 "Nikon_GPS:Connection_Pads_03" H 10300 1850 50  0001 C CNN
+F 3 "" H 10300 1850 50  0001 C CNN
+	1    10300 1850
+	1    0    0    -1  
+$EndComp
+Text Label 4100 2200 0    60   ~ 0
+GPS_TX
+$Comp
+L nikon_gps-rescue:GND #PWR04
+U 1 1 5BC25AF0
+P 7900 5700
+F 0 "#PWR04" H 7900 5450 50  0001 C CNN
+F 1 "GND" H 7900 5550 50  0000 C CNN
+F 2 "" H 7900 5700 50  0001 C CNN
+F 3 "" H 7900 5700 50  0001 C CNN
+	1    7900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:Fuse F1
+U 1 1 5BC25B14
+P 9800 1500
+F 0 "F1" H 9950 1550 50  0000 C CNN
+F 1 "0.1A" H 9950 1450 50  0000 C CNN
+F 2 "Nikon_GPS:Fuse_0603" V 9730 1500 50  0001 C CNN
+F 3 "" H 9800 1500 50  0001 C CNN
+	1    9800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:+5V #PWR06
+U 1 1 5BCB12FF
+P 7300 4550
+F 0 "#PWR06" H 7300 4400 50  0001 C CNN
+F 1 "+5V" H 7300 4690 50  0000 C CNN
+F 2 "" H 7300 4550 50  0001 C CNN
+F 3 "" H 7300 4550 50  0001 C CNN
+	1    7300 4550
+	1    0    0    -1  
+$EndComp
+Text Notes 7150 4225 0    60   ~ 12
+3.3V Supply
+Text Notes 1750 4225 0    60   ~ 12
+ON/OFF Switch
+Text Notes 6000 1200 0    60   ~ 12
+Logic Level Shifter
+Text Label 8600 1950 0    60   ~ 0
+BUF_OUT
+Text Notes 1950 1200 0    60   ~ 12
+GPS Module
+$Comp
+L nikon_gps-rescue:GND #PWR07
+U 1 1 5BCBA38F
+P 3600 5700
+F 0 "#PWR07" H 3600 5450 50  0001 C CNN
+F 1 "GND" H 3600 5550 50  0000 C CNN
+F 2 "" H 3600 5700 50  0001 C CNN
+F 3 "" H 3600 5700 50  0001 C CNN
+	1    3600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:+3.3V #PWR010
+U 1 1 5BCC14BA
+P 8300 1400
+F 0 "#PWR010" H 8300 1250 50  0001 C CNN
+F 1 "+3.3V" H 8300 1540 50  0000 C CNN
+F 2 "" H 8300 1400 50  0001 C CNN
+F 3 "" H 8300 1400 50  0001 C CNN
+	1    8300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR011
+U 1 1 5BCC32E3
+P 8700 1550
+F 0 "#PWR011" H 8700 1300 50  0001 C CNN
+F 1 "GND" H 8700 1400 50  0000 C CNN
+F 2 "" H 8700 1550 50  0001 C CNN
+F 3 "" H 8700 1550 50  0001 C CNN
+	1    8700 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C5
+U 1 1 5BCC5A8A
+P 7300 5300
+F 0 "C5" H 7400 5300 50  0000 L CNN
+F 1 "4.7uF" H 7450 5200 50  0000 C CNN
+F 2 "Nikon_GPS:C_0805" H 7300 5300 50  0001 C CNN
+F 3 "" H 7300 5300 50  0001 C CNN
+	1    7300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C6
+U 1 1 5BCC5EE5
+P 8900 5300
+F 0 "C6" H 8700 5300 50  0000 C CNN
+F 1 "1nF" H 8700 5200 50  0000 C CNN
+F 2 "Nikon_GPS:C_0603" H 8900 5300 50  0001 C CNN
+F 3 "" H 8900 5300 50  0001 C CNN
+	1    8900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C7
+U 1 1 5BCC5FD5
+P 9200 5300
+F 0 "C7" H 9050 5300 50  0000 C CNN
+F 1 "10uF" H 9050 5200 50  0000 C CNN
+F 2 "Nikon_GPS:C_0805" H 9200 5300 50  0001 C CNN
+F 3 "" H 9200 5300 50  0001 C CNN
+	1    9200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C4
+U 1 1 5BCC7288
+P 8500 1550
+F 0 "C4" V 8400 1550 50  0000 C CNN
+F 1 "100nF" V 8600 1550 50  0000 C CNN
+F 2 "Nikon_GPS:C_0603" H 8500 1550 50  0001 C CNN
+F 3 "" H 8500 1550 50  0001 C CNN
+	1    8500 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L nikon_gps-rescue:LED D3
+U 1 1 5BCCC6E9
+P 6050 4550
+F 0 "D3" V 6100 4350 50  0000 C CNN
+F 1 "Green" V 6000 4350 50  0000 C CNN
+F 2 "Nikon_GPS:LED_0805" H 6050 4550 50  0001 C CNN
+F 3 "" H 6050 4550 50  0001 C CNN
+	1    6050 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR013
+U 1 1 5BD7300F
+P 5800 5800
+F 0 "#PWR013" H 5800 5550 50  0001 C CNN
+F 1 "GND" H 5800 5650 50  0000 C CNN
+F 2 "" H 5800 5800 50  0001 C CNN
+F 3 "" H 5800 5800 50  0001 C CNN
+	1    5800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:R R10
+U 1 1 5BD7356E
+P 5800 4950
+F 0 "R10" H 5600 4900 50  0000 C CNN
+F 1 "330" H 5600 5000 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 5730 4950 50  0001 C CNN
+F 3 "" H 5800 4950 50  0001 C CNN
+	1    5800 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L nikon_gps-rescue:+3.3V #PWR014
+U 1 1 5BD7386D
+P 5800 4300
+F 0 "#PWR014" H 5800 4150 50  0001 C CNN
+F 1 "+3.3V" H 5800 4440 50  0000 C CNN
+F 2 "" H 5800 4300 50  0001 C CNN
+F 3 "" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	1    0    0    -1  
+$EndComp
+Text Label 2500 2000 0    60   ~ 0
+1PPS
+$Comp
+L nikon_gps-rescue:MountingHole MH1
+U 1 1 5BD82676
+P 5700 7000
+F 0 "MH1" H 5700 7100 50  0000 C CNN
+F 1 "M2 screw" H 5700 6900 50  0000 C CNN
+F 2 "Nikon_GPS:MountingHole_2.2mm_M2_DIN965" H 5700 7000 50  0001 C CNN
+F 3 "" H 5700 7000 50  0001 C CNN
+	1    5700 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:MountingHole MH2
+U 1 1 5BD82A2A
+P 6100 7000
+F 0 "MH2" H 6100 7100 50  0000 C CNN
+F 1 "M2 screw" H 6100 6900 50  0000 C CNN
+F 2 "Nikon_GPS:MountingHole_2.2mm_M2_DIN965" H 6100 7000 50  0001 C CNN
+F 3 "" H 6100 7000 50  0001 C CNN
+	1    6100 7000
+	1    0    0    -1  
+$EndComp
+Text Notes 5350 6700 0    60   ~ 12
+Mounting holes
+$Comp
+L nikon_gps-rescue:C_Small C2
+U 1 1 5C039F06
+P 4500 2500
+F 0 "C2" H 4600 2500 50  0000 L CNN
+F 1 "18pF" H 4650 2400 50  0000 C CNN
+F 2 "Nikon_GPS:C_0402" H 4500 2500 50  0001 C CNN
+F 3 "" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1500 3500 1400
+Wire Wire Line
+	3300 1400 3500 1400
+Wire Wire Line
+	4400 1800 4100 1800
+Wire Wire Line
+	4400 1800 4400 1700
+Wire Wire Line
+	4100 2200 4500 2200
+Wire Wire Line
+	9800 1250 9800 1350
+Wire Wire Line
+	8900 5700 8900 5400
+Wire Wire Line
+	7300 5400 7300 5700
+Wire Wire Line
+	3850 5100 4100 5100
+Wire Notes Line
+	7100 4100 9400 4100
+Wire Notes Line
+	9400 4100 9400 6050
+Wire Notes Line
+	9400 6050 7100 6050
+Wire Notes Line
+	7100 6050 7100 4100
+Wire Wire Line
+	9200 5700 9200 5400
+Wire Wire Line
+	7300 4550 7300 4900
+Wire Notes Line
+	5950 1100 5950 3100
+Wire Notes Line
+	5950 3100 9400 3100
+Wire Notes Line
+	9400 3100 9400 1100
+Wire Notes Line
+	9400 1100 5950 1100
+Wire Notes Line
+	5950 1225 6950 1225
+Wire Notes Line
+	5300 1100 5300 3000
+Wire Notes Line
+	5300 3000 1900 3000
+Wire Notes Line
+	1900 3000 1900 1100
+Wire Notes Line
+	1900 1100 5300 1100
+Wire Notes Line
+	1900 1225 2550 1225
+Wire Notes Line
+	2550 1225 2550 1100
+Wire Notes Line
+	4300 6050 1700 6050
+Wire Notes Line
+	1700 6050 1700 4100
+Wire Notes Line
+	1700 4100 4300 4100
+Wire Notes Line
+	4300 4100 4300 6050
+Wire Wire Line
+	3300 5100 3200 5100
+Wire Notes Line
+	1700 4250 2500 4250
+Connection ~ 3500 1400
+Wire Notes Line
+	6950 1225 6950 1100
+Wire Notes Line
+	6600 4100 6600 6050
+Wire Notes Line
+	6600 6050 4600 6050
+Wire Notes Line
+	4600 6050 4600 4100
+Wire Notes Line
+	4600 4100 6600 4100
+Wire Notes Line
+	5300 7200 6500 7200
+Wire Notes Line
+	6500 7200 6500 6600
+Wire Notes Line
+	6500 6600 5300 6600
+Wire Notes Line
+	5300 6725 6100 6725
+Wire Notes Line
+	6100 6725 6100 6600
+Wire Wire Line
+	4500 2200 4500 2400
+Connection ~ 4500 2200
+Wire Wire Line
+	4500 2800 4500 2600
+Text Label 2500 5100 2    60   ~ 0
+ON_SW
+$Comp
+L nikon_gps-rescue:L_Core_Ferrite L1
+U 1 1 5C07058A
+P 3850 1400
+F 0 "L1" V 3950 1400 50  0000 C CNN
+F 1 "600Ohm" V 3800 1400 50  0000 C CNN
+F 2 "Nikon_GPS:L_0805" H 3850 1400 50  0001 C CNN
+F 3 "" H 3850 1400 50  0001 C CNN
+	1    3850 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2200 5100 2200
+$Comp
+L nikon_gps-rescue:+3.3V #PWR015
+U 1 1 5BCB18D8
+P 9200 4550
+F 0 "#PWR015" H 9200 4400 50  0001 C CNN
+F 1 "+3.3V" H 9200 4690 50  0000 C CNN
+F 2 "" H 9200 4550 50  0001 C CNN
+F 3 "" H 9200 4550 50  0001 C CNN
+	1    9200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4900 7300 5200
+Wire Wire Line
+	7300 4900 7500 4900
+Wire Wire Line
+	8900 4900 9200 4900
+Wire Wire Line
+	9200 4900 9200 5200
+Wire Wire Line
+	3500 1400 3700 1400
+Wire Wire Line
+	4500 2200 4650 2200
+$Comp
+L Regulator_Switching:TPS62203DBV U4
+U 1 1 5E362319
+P 7900 5100
+F 0 "U4" H 7900 5525 50  0000 C CNN
+F 1 "TPS62203DBV" H 7900 5434 50  0000 C CNN
+F 2 "Nikon_GPS:SOT-23-5" H 7950 4950 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62201.pdf" H 7900 5200 50  0001 C CNN
+	1    7900 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5100 7500 5100
+Wire Wire Line
+	7500 5100 7500 4900
+Connection ~ 7500 4900
+Wire Wire Line
+	7500 4900 7600 4900
+Wire Notes Line
+	5300 6600 5300 7200
+Wire Notes Line
+	7750 4250 7100 4250
+$Comp
+L Device:L L2
+U 1 1 5E3F471F
+P 8450 4900
+F 0 "L2" V 8640 4900 50  0000 C CNN
+F 1 "10uH" V 8549 4900 50  0000 C CNN
+F 2 "Nikon_GPS:L_0805" H 8450 4900 50  0001 C CNN
+F 3 "~" H 8450 4900 50  0001 C CNN
+	1    8450 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 4900 8300 4900
+Wire Wire Line
+	8600 4900 8700 4900
+Connection ~ 8900 4900
+$Comp
+L 74xGxx:74LVC1G14 U5
+U 1 1 5E434A98
+P 3600 5100
+F 0 "U5" H 3850 5350 50  0000 C CNN
+F 1 "74LVC1G14" H 3850 5250 50  0000 C CNN
+F 2 "Nikon_GPS:SOT-23-5" H 3600 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3600 5100 50  0001 C CNN
+	1    3600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C8
+U 1 1 5E471137
+P 3200 5400
+F 0 "C8" H 3300 5425 50  0000 L CNN
+F 1 "100nF" H 3350 5325 50  0000 C CNN
+F 2 "Nikon_GPS:C_0805" H 3200 5400 50  0001 C CNN
+F 3 "" H 3200 5400 50  0001 C CNN
+	1    3200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5500 3200 5700
+Wire Wire Line
+	3200 5100 3200 5300
+$Comp
+L nikon_gps-rescue:R R8
+U 1 1 5E478A2C
+P 2850 5100
+F 0 "R8" V 3050 5100 50  0000 C CNN
+F 1 "4.7K" V 2950 5100 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 2780 5100 50  0001 C CNN
+F 3 "" H 2850 5100 50  0001 C CNN
+	1    2850 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nikon_gps-rescue:R R7
+U 1 1 5E47A7A1
+P 2500 4750
+F 0 "R7" H 2650 4700 50  0000 C CNN
+F 1 "33K" H 2650 4800 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 2430 4750 50  0001 C CNN
+F 3 "" H 2500 4750 50  0001 C CNN
+	1    2500 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 4900 2500 5100
+Wire Wire Line
+	2500 5100 2700 5100
+Wire Wire Line
+	3000 5100 3200 5100
+Connection ~ 3200 5100
+Wire Wire Line
+	2500 4600 2500 4500
+Connection ~ 3600 4700
+Connection ~ 2500 5100
+$Comp
+L nikon_gps-rescue:+3.3V #PWR0101
+U 1 1 5E4AFCB7
+P 3600 4500
+F 0 "#PWR0101" H 3600 4350 50  0001 C CNN
+F 1 "+3.3V" H 3615 4673 50  0000 C CNN
+F 2 "" H 3600 4500 50  0001 C CNN
+F 3 "" H 3600 4500 50  0001 C CNN
+	1    3600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4500 3600 4700
+Wire Wire Line
+	5800 5550 5800 5800
+Text Notes 4650 4225 0    60   ~ 12
+LEDs
+Wire Notes Line
+	4925 4250 4600 4250
+Wire Notes Line
+	4925 4250 4925 4100
+$Comp
+L nikon_gps-rescue:R R9
+U 1 1 5E558C0D
+P 5050 4850
+F 0 "R9" H 4900 4800 50  0000 C CNN
+F 1 "33K" H 4900 4900 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 4980 4850 50  0001 C CNN
+F 3 "" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 5350 5400 5350
+Wire Wire Line
+	5050 5350 5050 5000
+Wire Notes Line
+	2500 4250 2500 4100
+Wire Notes Line
+	7750 4100 7750 4250
+Text Notes 6150 4500 0    50   ~ 0
+On/off\nLEDs
+$Comp
+L nikon_gps-rescue:GND #PWR0102
+U 1 1 5E68B8BF
+P 3500 2800
+F 0 "#PWR0102" H 3500 2550 50  0001 C CNN
+F 1 "GND" H 3500 2650 50  0000 C CNN
+F 2 "" H 3500 2800 50  0001 C CNN
+F 3 "" H 3500 2800 50  0001 C CNN
+	1    3500 2800
+	1    0    0    -1  
+$EndComp
+Text Label 4100 4800 1    60   ~ 0
+ON_OFF
+Text Label 6550 2900 1    60   ~ 0
+WAKEUP
+$Comp
+L nikon_gps-rescue:GND #PWR0104
+U 1 1 5E707CB7
+P 8400 5700
+F 0 "#PWR0104" H 8400 5450 50  0001 C CNN
+F 1 "GND" H 8400 5550 50  0000 C CNN
+F 2 "" H 8400 5700 50  0001 C CNN
+F 3 "" H 8400 5700 50  0001 C CNN
+	1    8400 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5650 8400 5700
+Wire Wire Line
+	2900 2400 2500 2400
+Wire Wire Line
+	2500 2400 2500 3400
+NoConn ~ 4100 2400
+Text Label 3650 3400 2    60   ~ 0
+WAKEUP
+Wire Wire Line
+	8900 4900 8900 5200
+Wire Wire Line
+	8200 5100 8700 5100
+Wire Wire Line
+	8700 5100 8700 4900
+Connection ~ 8700 4900
+Wire Wire Line
+	8700 4900 8900 4900
+$Comp
+L nikon_gps-rescue:GND #PWR012
+U 1 1 5BCC4976
+P 3150 4700
+F 0 "#PWR012" H 3150 4450 50  0001 C CNN
+F 1 "GND" H 3150 4550 50  0000 C CNN
+F 2 "" H 3150 4700 50  0001 C CNN
+F 3 "" H 3150 4700 50  0001 C CNN
+	1    3150 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C9
+U 1 1 5BCC622D
+P 3350 4700
+F 0 "C9" V 3150 4700 50  0000 C CNN
+F 1 "100nF" V 3250 4700 50  0000 C CNN
+F 2 "Nikon_GPS:C_0603" H 3350 4700 50  0001 C CNN
+F 3 "" H 3350 4700 50  0001 C CNN
+	1    3350 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4700 3600 5000
+Wire Wire Line
+	3450 4700 3600 4700
+$Comp
+L nikon_gps-rescue:GND #PWR0103
+U 1 1 5E69EB49
+P 8300 2400
+F 0 "#PWR0103" H 8300 2150 50  0001 C CNN
+F 1 "GND" H 8300 2250 50  0000 C CNN
+F 2 "" H 8300 2400 50  0001 C CNN
+F 3 "" H 8300 2400 50  0001 C CNN
+	1    8300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:SN74LV1T126_ALT U3
+U 1 1 5BCC036B
+P 8300 1950
+F 0 "U3" H 8650 1700 50  0000 C CNN
+F 1 "SN74LV1T126" H 8650 1600 50  0000 C CNN
+F 2 "Nikon_GPS:SOT-23-5" H 8395 1815 50  0001 C CNN
+F 3 "" H 8445 2065 50  0001 C CNN
+	1    8300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4550 9200 4900
+Connection ~ 9200 4900
+Wire Wire Line
+	8900 4850 8900 4900
+Text Label 3650 3750 2    60   ~ 0
+ON_OFF
+Wire Wire Line
+	4100 3750 4100 5100
+Wire Wire Line
+	2200 3750 4100 3750
+$Comp
+L nikon_gps-rescue:R R3
+U 1 1 5F12A0B1
+P 6150 2550
+F 0 "R3" H 6000 2525 50  0000 C CNN
+F 1 "10K" H 6000 2600 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 6080 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 1550 8700 1550
+Wire Wire Line
+	7900 2350 7700 2350
+$Comp
+L nikon_gps-rescue:R R5
+U 1 1 5F13FCD4
+P 7200 1850
+F 0 "R5" V 7250 2050 50  0000 C CNN
+F 1 "22K" V 7250 1650 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 7130 1850 50  0001 C CNN
+F 3 "" H 7200 1850 50  0001 C CNN
+	1    7200 1850
+	0    -1   -1   0   
+$EndComp
+Text Label 9700 1950 2    60   ~ 0
+OUT
+Wire Wire Line
+	7900 1600 6150 1600
+Wire Wire Line
+	6150 1600 6150 2200
+Wire Wire Line
+	7050 1850 6750 1850
+Wire Wire Line
+	7350 1850 7700 1850
+Wire Wire Line
+	7700 1850 7700 2350
+Connection ~ 7700 2350
+Wire Wire Line
+	7700 2350 7450 2350
+Wire Wire Line
+	8300 2250 8300 2400
+$Comp
+L nikon_gps-rescue:GND #PWR0106
+U 1 1 5F285B91
+P 7200 2150
+F 0 "#PWR0106" H 7200 1900 50  0001 C CNN
+F 1 "GND" H 7200 2000 50  0000 C CNN
+F 2 "" H 7200 2150 50  0001 C CNN
+F 3 "" H 7200 2150 50  0001 C CNN
+	1    7200 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 1550 8300 1550
+Connection ~ 8300 1550
+Wire Wire Line
+	8300 1550 8300 1650
+Wire Wire Line
+	8300 1400 8300 1550
+Wire Wire Line
+	8950 1950 8600 1950
+$Comp
+L nikon_gps-rescue:R R6
+U 1 1 5BC25677
+P 9100 1950
+F 0 "R6" V 9200 1950 50  0000 C CNN
+F 1 "33" V 9000 1950 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 9030 1950 50  0001 C CNN
+F 3 "" H 9100 1950 50  0001 C CNN
+	1    9100 1950
+	0    -1   -1   0   
+$EndComp
+Text Label 7300 1600 2    60   ~ 0
+BUFFER_IN
+Text Label 7750 2350 0    50   ~ 0
+OE
+Wire Wire Line
+	10100 1750 9800 1750
+Wire Wire Line
+	9800 1750 9800 1650
+Wire Wire Line
+	3600 5200 3600 5700
+$Comp
+L nikon_gps-rescue:GND #PWR0110
+U 1 1 5F495D81
+P 3200 5700
+F 0 "#PWR0110" H 3200 5450 50  0001 C CNN
+F 1 "GND" H 3200 5550 50  0000 C CNN
+F 2 "" H 3200 5700 50  0001 C CNN
+F 3 "" H 3200 5700 50  0001 C CNN
+	1    3200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR0111
+U 1 1 5F4A6519
+P 2050 5700
+F 0 "#PWR0111" H 2050 5450 50  0001 C CNN
+F 1 "GND" H 2050 5550 50  0000 C CNN
+F 2 "" H 2050 5700 50  0001 C CNN
+F 3 "" H 2050 5700 50  0001 C CNN
+	1    2050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:+3.3V #PWR0112
+U 1 1 5F4BF4B5
+P 2500 4500
+F 0 "#PWR0112" H 2500 4350 50  0001 C CNN
+F 1 "+3.3V" H 2515 4673 50  0000 C CNN
+F 2 "" H 2500 4500 50  0001 C CNN
+F 3 "" H 2500 4500 50  0001 C CNN
+	1    2500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4700 3250 4700
+$Comp
+L nikon_gps-rescue:GND #PWR0114
+U 1 1 5F54156F
+P 7300 5700
+F 0 "#PWR0114" H 7300 5450 50  0001 C CNN
+F 1 "GND" H 7300 5550 50  0000 C CNN
+F 2 "" H 7300 5700 50  0001 C CNN
+F 3 "" H 7300 5700 50  0001 C CNN
+	1    7300 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5300 7900 5700
+$Comp
+L nikon_gps-rescue:GND #PWR0115
+U 1 1 5F54E653
+P 8900 5700
+F 0 "#PWR0115" H 8900 5450 50  0001 C CNN
+F 1 "GND" H 8900 5550 50  0000 C CNN
+F 2 "" H 8900 5700 50  0001 C CNN
+F 3 "" H 8900 5700 50  0001 C CNN
+	1    8900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR0116
+U 1 1 5F54EAE8
+P 9200 5700
+F 0 "#PWR0116" H 9200 5450 50  0001 C CNN
+F 1 "GND" H 9200 5550 50  0000 C CNN
+F 2 "" H 9200 5700 50  0001 C CNN
+F 3 "" H 9200 5700 50  0001 C CNN
+	1    9200 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4850 7500 4900
+Connection ~ 7300 4900
+$Comp
+L nikon_gps-rescue:GND #PWR0117
+U 1 1 5F5A3345
+P 4500 2800
+F 0 "#PWR0117" H 4500 2550 50  0001 C CNN
+F 1 "GND" H 4500 2650 50  0000 C CNN
+F 2 "" H 4500 2800 50  0001 C CNN
+F 3 "" H 4500 2800 50  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2700 3500 2800
+Wire Wire Line
+	4400 1300 4400 1400
+$Comp
+L nikon_gps-rescue:+3.3V #PWR0118
+U 1 1 5F5E5EBA
+P 4100 1300
+F 0 "#PWR0118" H 4100 1150 50  0001 C CNN
+F 1 "+3.3V" H 4100 1440 50  0000 C CNN
+F 2 "" H 4100 1300 50  0001 C CNN
+F 3 "" H 4100 1300 50  0001 C CNN
+	1    4100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1400 4100 1400
+Wire Wire Line
+	4100 1400 4100 1300
+$Comp
+L nikon_gps-rescue:R R4
+U 1 1 5F6501F4
+P 6750 2650
+F 0 "R4" H 6900 2675 50  0000 C CNN
+F 1 "10K" H 6900 2600 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 6680 2650 50  0001 C CNN
+F 3 "" H 6750 2650 50  0001 C CNN
+	1    6750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR0119
+U 1 1 5F662A41
+P 6750 2850
+F 0 "#PWR0119" H 6750 2600 50  0001 C CNN
+F 1 "GND" H 6750 2700 50  0000 C CNN
+F 2 "" H 6750 2850 50  0001 C CNN
+F 3 "" H 6750 2850 50  0001 C CNN
+	1    6750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2850 6750 2800
+Wire Wire Line
+	6750 2500 6750 2400
+Wire Wire Line
+	6750 2400 6550 2400
+$Comp
+L Custom_Symbols_Library:TestPoint_Round TP1
+U 1 1 5F17EDFC
+P 7500 4850
+F 0 "TP1" H 7500 5075 50  0000 C CNN
+F 1 "5V" H 7500 5000 50  0000 C CNN
+F 2 "Nikon_GPS:Measurement_Point_Round-SMD-Pad_Small" H 7700 4850 50  0001 C CNN
+F 3 "~" H 7700 4850 50  0001 C CNN
+	1    7500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Symbols_Library:TestPoint_Round TP2
+U 1 1 5F17FBAB
+P 8900 4850
+F 0 "TP2" H 8900 5075 50  0000 C CNN
+F 1 "3.3V" H 8900 5000 50  0000 C CNN
+F 2 "Nikon_GPS:Measurement_Point_Round-SMD-Pad_Small" H 9100 4850 50  0001 C CNN
+F 3 "~" H 9100 4850 50  0001 C CNN
+	1    8900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Symbols_Library:TestPoint_Round TP3
+U 1 1 5F1802A4
+P 8400 5650
+F 0 "TP3" H 8400 5875 50  0000 C CNN
+F 1 "GND" H 8400 5800 50  0000 C CNN
+F 2 "Nikon_GPS:Measurement_Point_Round-SMD-Pad_Small" H 8600 5650 50  0001 C CNN
+F 3 "~" H 8600 5650 50  0001 C CNN
+	1    8400 5650
+	1    0    0    -1  
+$EndComp
+Text Label 10100 1750 2    60   ~ 0
+5V_IN
+Wire Wire Line
+	10050 1850 10100 1850
+Wire Wire Line
+	9250 1950 10100 1950
+Wire Wire Line
+	2950 1400 3100 1400
+$Comp
+L nikon_gps-rescue:GND #PWR09
+U 1 1 5BCBE71D
+P 2950 1400
+F 0 "#PWR09" H 2950 1150 50  0001 C CNN
+F 1 "GND" H 2950 1250 50  0000 C CNN
+F 2 "" H 2950 1400 50  0001 C CNN
+F 3 "" H 2950 1400 50  0001 C CNN
+	1    2950 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L nikon_gps-rescue:C_Small C1
+U 1 1 5BCC7898
+P 3200 1400
+F 0 "C1" V 3300 1400 50  0000 C CNN
+F 1 "100nF" V 3100 1400 50  0000 C CNN
+F 2 "Nikon_GPS:C_0805_NarrowPads" H 3200 1400 50  0001 C CNN
+F 3 "" H 3200 1400 50  0001 C CNN
+	1    3200 1400
+	0    -1   -1   0   
+$EndComp
+Text Label 3350 1400 0    46   ~ 0
+3.3V_GPS
+$Comp
+L nikon_gps-rescue:GND #PWR0108
+U 1 1 5F317798
+P 6150 2850
+F 0 "#PWR0108" H 6150 2600 50  0001 C CNN
+F 1 "GND" H 6150 2700 50  0000 C CNN
+F 2 "" H 6150 2850 50  0001 C CNN
+F 3 "" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1950 7900 1600
+Wire Wire Line
+	8000 1950 7900 1950
+Wire Wire Line
+	7900 2050 7900 2350
+Wire Wire Line
+	8000 2050 7900 2050
+Text Notes 10400 1950 0    60   ~ 0
+To Nikon\nCamera
+Wire Wire Line
+	5100 2150 5100 2200
+$Comp
+L Custom_Symbols_Library:TestPoint_Round TP4
+U 1 1 5F17B613
+P 5100 2150
+F 0 "TP4" H 5100 2375 50  0000 C CNN
+F 1 "GPS TX" H 5100 2300 50  0000 C CNN
+F 2 "Nikon_GPS:Measurement_Point_Round-SMD-Pad_Small" H 5300 2150 50  0001 C CNN
+F 3 "~" H 5300 2150 50  0001 C CNN
+	1    5100 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 2200
+Wire Wire Line
+	6150 2400 6150 2200
+Connection ~ 6150 2200
+Wire Wire Line
+	6150 2850 6150 2700
+Wire Wire Line
+	6550 2400 6550 3400
+Wire Wire Line
+	5100 2200 6150 2200
+Text Label 5400 2200 0    60   ~ 0
+BUFFER_IN
+$Comp
+L nikon_gps-rescue:+3.3V #PWR0107
+U 1 1 5F1C6BA6
+P 7200 2650
+F 0 "#PWR0107" H 7200 2500 50  0001 C CNN
+F 1 "+3.3V" H 7200 2800 50  0000 C CNN
+F 2 "" H 7200 2650 50  0001 C CNN
+F 3 "" H 7200 2650 50  0001 C CNN
+	1    7200 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR0105
+U 1 1 5F20CB7B
+P 7550 2600
+F 0 "#PWR0105" H 7550 2350 50  0001 C CNN
+F 1 "GND" H 7550 2450 50  0000 C CNN
+F 2 "" H 7550 2600 50  0001 C CNN
+F 3 "" H 7550 2600 50  0001 C CNN
+	1    7550 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 2600 7200 2600
+Wire Wire Line
+	7500 2600 7550 2600
+$Comp
+L nikon_gps-rescue:C_Small C3
+U 1 1 5F200C55
+P 7400 2600
+F 0 "C3" V 7300 2600 50  0000 C CNN
+F 1 "100nF" V 7500 2600 50  0000 C CNN
+F 2 "Nikon_GPS:C_0402" H 7400 2600 50  0001 C CNN
+F 3 "" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 2200 6750 2300
+Connection ~ 6750 2200
+Wire Wire Line
+	6750 1850 6750 2200
+Wire Wire Line
+	6300 2200 6150 2200
+Wire Wire Line
+	6600 2200 6750 2200
+$Comp
+L Device:D D1
+U 1 1 5F13F200
+P 6450 2200
+F 0 "D1" H 6450 2000 50  0000 C CNN
+F 1 "Shottky" H 6450 2100 50  0000 C CNN
+F 2 "Nikon_GPS:D_SOD-523" H 6450 2200 50  0001 C CNN
+F 3 "~" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L nikon_gps-rescue:74AUP1T08-Custom_Symbols_Library U2
+U 1 1 5F1B0E72
+P 7200 2350
+F 0 "U2" H 7400 2100 50  0000 L CNN
+F 1 "74AUP1T08" H 7250 2200 50  0000 L CNN
+F 2 "Nikon_GPS:SOT-353_SC-70-5" H 7250 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7250 2350 50  0001 C CNN
+	1    7200 2350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7000 2400 6750 2400
+Connection ~ 6750 2400
+Wire Wire Line
+	7000 2300 6750 2300
+Wire Wire Line
+	7200 2150 7200 2200
+Wire Wire Line
+	7200 2650 7200 2600
+Connection ~ 7200 2600
+Wire Wire Line
+	7200 2500 7200 2600
+$Comp
+L Custom_Symbols_Library:TestPoint_Round TP5
+U 1 1 5F4B2DD4
+P 2500 1900
+F 0 "TP5" H 2500 2125 50  0000 C CNN
+F 1 "1PPS" H 2500 2050 50  0000 C CNN
+F 2 "Nikon_GPS:Measurement_Point_Round-SMD-Pad_Small" H 2700 1900 50  0001 C CNN
+F 3 "~" H 2700 1900 50  0001 C CNN
+	1    2500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS_Modules_Library:Hornet_ORG1411_ALT U1
+U 1 1 5F4DDE32
+P 3500 2100
+F 0 "U1" H 4000 1450 60  0000 C CNN
+F 1 "Hornet ORG1411" H 4000 1350 60  0000 C CNN
+F 2 "Nikon_GPS:ORG1411_GPS_ALT" H 3500 1900 60  0001 C CNN
+F 3 "" H 3500 1900 60  0000 C CNN
+	1    3500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2200 2900 2200
+Wire Wire Line
+	2200 2200 2200 3750
+Wire Wire Line
+	2900 2000 2500 2000
+Wire Wire Line
+	2500 2000 2500 1900
+Wire Wire Line
+	6050 4350 5800 4350
+Wire Wire Line
+	6050 4700 6050 4750
+Wire Wire Line
+	6050 4400 6050 4350
+Wire Wire Line
+	5550 4350 5550 4400
+Wire Wire Line
+	5550 4750 5550 4700
+$Comp
+L nikon_gps-rescue:LED D2
+U 1 1 5BCCC668
+P 5550 4550
+F 0 "D2" V 5600 4350 50  0000 C CNN
+F 1 "Green" V 5500 4350 50  0000 C CNN
+F 2 "Nikon_GPS:LED_0805" H 5550 4550 50  0001 C CNN
+F 3 "" H 5550 4550 50  0001 C CNN
+	1    5550 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 4300 5800 4350
+Connection ~ 5800 4350
+Wire Wire Line
+	5800 4350 5550 4350
+Wire Wire Line
+	5550 4750 5800 4750
+Wire Wire Line
+	5800 4750 5800 4800
+Wire Wire Line
+	5800 5100 5800 5150
+Connection ~ 5800 4750
+Wire Wire Line
+	5800 4750 6050 4750
+Wire Wire Line
+	7900 2350 7900 3700
+Wire Wire Line
+	7900 3700 5050 3700
+Connection ~ 7900 2350
+Wire Wire Line
+	5050 3700 5050 4700
+Wire Wire Line
+	2500 3400 6550 3400
+Text Label 6400 3700 0    50   ~ 0
+OE
+$Comp
+L nikon_gps-rescue:C_Small C10
+U 1 1 5F2FDD7E
+P 5400 5600
+F 0 "C10" H 5600 5650 50  0000 C CNN
+F 1 "100nF" H 5600 5550 50  0000 C CNN
+F 2 "Nikon_GPS:C_0402" H 5400 5600 50  0001 C CNN
+F 3 "" H 5400 5600 50  0001 C CNN
+	1    5400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR0109
+U 1 1 5F3374B6
+P 5400 5800
+F 0 "#PWR0109" H 5400 5550 50  0001 C CNN
+F 1 "GND" H 5400 5650 50  0000 C CNN
+F 2 "" H 5400 5800 50  0001 C CNN
+F 3 "" H 5400 5800 50  0001 C CNN
+	1    5400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5800 5400 5700
+Wire Wire Line
+	5400 5500 5400 5350
+Connection ~ 5400 5350
+Wire Wire Line
+	5400 5350 5050 5350
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5F33EB4F
+P 5700 5350
+F 0 "Q1" H 5904 5396 50  0000 L CNN
+F 1 "NMOS" H 5904 5305 50  0000 L CNN
+F 2 "Nikon_GPS:SOT-323_SC-70" H 5900 5450 50  0001 C CNN
+F 3 "~" H 5700 5350 50  0001 C CNN
+	1    5700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L nikon_gps-rescue:R R11
+U 1 1 5F34076C
+P 5050 5600
+F 0 "R11" H 4900 5550 50  0000 C CNN
+F 1 "100K" H 4900 5650 50  0000 C CNN
+F 2 "Nikon_GPS:R_0603" V 4980 5600 50  0001 C CNN
+F 3 "" H 5050 5600 50  0001 C CNN
+	1    5050 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L nikon_gps-rescue:GND #PWR0113
+U 1 1 5F34EB3C
+P 5050 5800
+F 0 "#PWR0113" H 5050 5550 50  0001 C CNN
+F 1 "GND" H 5050 5650 50  0000 C CNN
+F 2 "" H 5050 5800 50  0001 C CNN
+F 3 "" H 5050 5800 50  0001 C CNN
+	1    5050 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5800 5050 5750
+Wire Wire Line
+	5050 5450 5050 5350
+Connection ~ 5050 5350
+Wire Wire Line
+	2150 5100 2500 5100
+NoConn ~ 1950 5200
+Wire Wire Line
+	2150 5200 2150 5100
+$Comp
+L Custom_Symbols_Library:SW_Push_4pin SW1
+U 1 1 5F2959C7
+P 2050 5400
+F 0 "SW1" V 2096 5274 50  0000 R CNN
+F 1 "ON/OFF" V 2005 5274 50  0000 R CNN
+F 2 "Nikon_GPS:SW_SPST_PTS645_4pin" H 2050 5600 50  0001 C CNN
+F 3 "" H 2050 5600 50  0001 C CNN
+	1    2050 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 5600 1950 5650
+Wire Wire Line
+	1950 5650 2050 5650
+Wire Wire Line
+	2150 5650 2150 5600
+Wire Wire Line
+	2050 5700 2050 5650
+Connection ~ 2050 5650
+Wire Wire Line
+	2050 5650 2150 5650
+$EndSCHEMATC
