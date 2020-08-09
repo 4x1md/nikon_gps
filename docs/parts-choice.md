@@ -27,11 +27,12 @@ Parts which I considered while working on this project.
 
 ## Level converters:
 
-1. SN74LV1T126DBVR (Level converter, tri-state output)
-2. SN74LV1T34DBV (Level converter, no Output Enable pin)
-3. SN74LVC1T45
-4. MAX3370
-5. MAX3371
+1. TI SN74LV1T126DBVR (Level converter, tri-state output, Output Enable)
+2. Nexperia 74LV1T126GWH (Level converter, tri-state output, Output Enable)
+3. TI SN74LV1T34DBV (Level converter, no Output Enable pin)
+4. SN74LVC1T45
+5. MAX3370
+6. MAX3371
 
 ## AND gates with voltage level translation
 
@@ -50,14 +51,25 @@ AUP series have Schmitt trigger inputs.
 
 ## Schmitt triggers for ON/OFF button debouncing
 
-1. 74LVC1G17
+1. Texas Instruments SN74LVC1G14DBVR
+2. Nexperia 74LVC1G14GW,125
+3. Diodes Incorporated 74LVC1G14SE-7
 
 ## Diode
 
 Low Vf Schottky diode is requred.
 
-1. ON Semi NSR0340V2T1G
-2. ST BAS40-02V-V-G
+SOD-523
+
+1. ON Semiconductor NSR0340V2T1G
+2. ST BAS40-02V-V-G SOD-523
+3. ON Semiconductor RB521S30T5G - selected diode
+
+SOD-323
+
+1. ON Semiconductor NSR0170HT1G SOD-323
+2. ON Semiconductor NSR0240HT1G SOD-323
+3. Toshiba CUS521,H3F SOD-323 - lowest Vf
 
 ## ON/OFF switch driver
 
@@ -80,6 +92,6 @@ https://www.aliexpress.com/item//32859870553.html
 
 ## Power supply
 
-1. Analog ADP2108-3.3 - buck converter, high efficiency on low currents, SOT-23-5
-2. TI TPS62203DBV - SOT-23-5
+1. Analog Devices ADP2108AUJZ-3.3-R7 - buck converter, high efficiency on low currents, SOT-23-5
+2. TI TPS62203DBVR - SOT-23-5
 3. TPS62840 - VSON-8 - more difficult to solder
