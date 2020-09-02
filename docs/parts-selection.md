@@ -28,11 +28,12 @@ Parts which I considered while working on this project.
 ## Level converters:
 
 1. TI SN74LV1T126DBVR (Level converter, tri-state output, Output Enable)
-2. Nexperia 74LV1T126GWH (Level converter, tri-state output, Output Enable)
-3. TI SN74LV1T34DBV (Level converter, no Output Enable pin)
-4. SN74LVC1T45
-5. MAX3370
-6. MAX3371
+2. Nexperia 74LV1T126GWH (Level converter, tri-state output, Output Enable, SC-70-5)
+3. Nexperia 74LV1T126GVH (Level converter, tri-state output, Output Enable, SOT-23-5)
+4. TI SN74LV1T34DBV (Level converter, no Output Enable pin)
+5. SN74LVC1T45
+6. MAX3370
+7. MAX3371
 
 ## AND gates with voltage level translation
 
