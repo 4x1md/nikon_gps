@@ -8,7 +8,7 @@
 4. Siglent SDG1032X signal generator
 
 ## Tested Circuit
-![DUT](../images/tested_circuit.png)
+![DUT](../images/revision-a/tested_circuit.png)
 
 
 ## Tests without the GPS module
