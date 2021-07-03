@@ -28,9 +28,9 @@ Revision A:
 
 ## Mechanics
 
-![Mechanics](images/pcb-rev-a-assembled/mech_1.jpg)
+![Mechanics](images/revision-a/mech_1.jpg)
 
-![Mechanics](images/pcb-rev-a-assembled/mech_2.jpg)
+![Mechanics](images/revision-a/mech_2.jpg)
 
 ## PCB Design
 
@@ -38,13 +38,13 @@ The PCB was designed in KiCAD.
 
 ### 3D Model
 
-![PCB](images/3d_model_1.png)
+![PCB](images/rev-b-3d-model-1.png)
 
-![PCB](images/3d_model_2.png)
+![PCB](images/rev-b-3d-model-1.png)
 
 ### Manufactured PCB
 
-![PCB](images/pcb-rev-a-assembled/pcb.jpg)
+![PCB](images/revision-a/rev-a-pcb.jpg)
 
 ## BOM Variants
 
@@ -52,13 +52,13 @@ TBD
 
 ## Assembled Device
 
-![Assembled](images/pcb-rev-a-assembled/assembled_1.jpg)
+![Assembled](images/revision-a/assembled_1.jpg)
 
-![Assembled](images/pcb-rev-a-assembled/assembled_2.jpg)
+![Assembled](images/revision-a/assembled_2.jpg)
 
-![Assembled](images/pcb-rev-a-assembled/assembled_3.jpg)
+![Assembled](images/revision-a/assembled_3.jpg)
 
-![Assembled](images/pcb-rev-a-assembled/assembled_4.jpg)
+![Assembled](images/revision-a/assembled_4.jpg)
 
 ## Device Tests
 
