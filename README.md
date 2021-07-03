@@ -55,11 +55,15 @@ TBD
 
 ### Revision A Tests
 
-The tests were done in order to verify the assembled circuit. Refer to [development-tests.md](docs/development-tests.md) for details.
+The tests were done in order to verify the assembled circuit. Refer to [development-tests-rev-a.md](docs/development-tests-rev-a.md) for test notes.
 
 ### ORG1411 GPS Module On/Off Tests
 
 The on/off sequence of the ORG1411 GPS module was tested in order to understand how to connect an external on/off button to the module. Refer to [on-off-tests.md](docs/on-off-tests.md) for details.
+
+### Revision B Tests
+
+The tests were done in order to verify the assembled circuit. Refer to [development-tests-rev-b.md](docs/development-tests-rev-b.md) for test notes.
 
 ## Field Tests
 
@@ -85,3 +89,4 @@ You are more than welcome to contact me with any questions, suggestions or propo
 3. Write me an email to iosaaris =at= gmail dot com
 
 73 de 4X1MD
+

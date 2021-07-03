@@ -16,7 +16,7 @@ The GPS module is hard to manually solder and especially desolder. Thus, before 
 
 ### Power-on
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00006.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00006.png)
 
 Channel  | Signal
 --- | ---
@@ -27,7 +27,7 @@ Channel  | Signal
 
 ### Power-off
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00008.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00008.png)
 
 Channel  | Signal
 --- | ---
@@ -40,7 +40,7 @@ Channel  | Signal
 
 **Turning 3.3V on**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00012.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00012.png)
 
 Channel  | Signal
 --- | ---
@@ -50,7 +50,7 @@ Channel  | Signal
 
 **Turning 3.3V off**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00016.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00016.png)
 
 Channel  | Signal
 --- | ---
@@ -64,15 +64,15 @@ Logic level shifting was tested by injecting pulses to the input of U2. Pulse fr
 
 **Rise time**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00020.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00020.png)
 
 **Fall time**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00022.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00022.png)
 
 **Output pulses with 3.3V input**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00025.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00025.png)
 
 **Logic level shifting with 2.475V input**
 
@@ -87,7 +87,7 @@ Vcc in this circuit is 3.3V, therefore, V<sub>HIGH</sub> is 2.475V.
 
 Later, tests with GPS module demonstrated that these pulses don't reflect the real-world voltage levels.
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00028.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00028.png)
 
 Channel  | Signal
 --- | ---
@@ -101,7 +101,7 @@ The same tests were performed with the GPS module assembled.
 
 ### Power-on
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00032.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00032.png)
 
 Channel  | Signal
 --- | ---
@@ -114,9 +114,9 @@ Channel  | Signal
 
 The pulses on the GPS_OUT line are UART transmissions of the GPS module.
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00057.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00057.png)
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00058.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00058.png)
 
 Channel  | Signal
 --- | ---
@@ -129,7 +129,7 @@ Channel  | Signal
 
 **Turning 3.3V on**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00038.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00038.png)
 
 Channel  | Signal
 --- | ---
@@ -139,7 +139,7 @@ Channel  | Signal
 
 **Turning 3.3V off**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00040.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00040.png)
 
 Channel  | Signal
 --- | ---
@@ -151,15 +151,15 @@ Channel  | Signal
 
 **Rise time**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00041.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00041.png)
 
 **Fall time**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00042.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00042.png)
 
 **Output pulses with 3.3V input**
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00043.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00043.png)
 
 Channel  | Signal
 --- | ---
@@ -170,9 +170,9 @@ This test shows that the real logic levels of the ORG1410-PM04 UART is 1.8V. Acc
 
 ### UART waveforms
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00045.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00045.png)
 
-![Power-on without GPS](../images/pcb-rev-a-development-tests/SDS00051.png)
+![Power-on without GPS](../images/rev-a-tests/SDS00051.png)
 
 Channel  | Signal
 --- | ---
