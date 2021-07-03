@@ -1,9 +1,15 @@
 # DIY GPS Module for Nikon DSLR
-GPS module for Nikon DSLR.
+External GPS module for Nikon DSLR.
 
-## Overvies
+## Overview
 
 TBD
+
+
+
+This document describes the latest version of theis project. The first version of this project (revision A) is presented in [revision-a.md](docs/revision-a.md).
+
+
 
 ## Reference Projects
 
@@ -12,6 +18,13 @@ TBD
 ## Parts
 
 TBD
+
+## Schematics
+
+Revision A:
+
+![PCB](images/schematic.png)
+
 
 ## Mechanics
 
@@ -22,10 +35,6 @@ TBD
 ## PCB Design
 
 The PCB was designed in KiCAD.
-
-### PCB schematics
-
-![PCB](images/schematic.png)
 
 ### 3D Model
 
@@ -51,21 +60,17 @@ TBD
 
 ![Assembled](images/pcb-rev-a-assembled/assembled_4.jpg)
 
-## Development Tests
+## Device Tests
 
-### Revision A Tests
+### Design Validation Tests
 
-The tests were done in order to verify the assembled circuit. Refer to [development-tests-rev-a.md](docs/development-tests-rev-a.md) for test notes.
+The tests were done in order to verify the assembled circuit. Refer to [development-tests-rev-b.md](docs/development-tests-rev-b.md) for test notes.
 
 ### ORG1411 GPS Module On/Off Tests
 
 The on/off sequence of the ORG1411 GPS module was tested in order to understand how to connect an external on/off button to the module. Refer to [gps-on-off-tests.md](docs/gps-on-off-tests.md) for details.
 
-### Revision B Tests
-
-The tests were done in order to verify the assembled circuit. Refer to [development-tests-rev-b.md](docs/development-tests-rev-b.md) for test notes.
-
-## Field Tests
+### Field Tests
 
 ![Field tests](images/field_tests_1.png)
 
