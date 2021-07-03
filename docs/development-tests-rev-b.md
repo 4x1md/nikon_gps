@@ -8,7 +8,7 @@
 4. Siglent SDG1032X signal generator
 
 ## Tested Circuit
-![Schematic](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/tested-circuit.png)
+![Schematic](../images/rev-b-tests/tested-circuit.png)
 
 
 ## Tests without GPS module
@@ -18,7 +18,7 @@ The GPS module is hard to manually solder and especially desolder. Therefore, be
 
 #### Wake-up with no load
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/001.png)
+![Wavewform](../images/rev-b-tests/001.png)
 
 Channel | Signal |
 --- | ---
@@ -27,7 +27,7 @@ Channel | Signal |
 
 #### Power-off with no load
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/002.png)
+![Wavewform](../images/rev-b-tests/002.png)
 
 Channel | Signal |
 --- | ---
@@ -38,7 +38,7 @@ Channel | Signal |
 
 Wake-up with load was tested with a 33 Ohm resistor (100mA load current) connected between the buck output and GND.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/003.png)
+![Wavewform](../images/rev-b-tests/003.png)
 
 Channel | Signal |
 --- | ---
@@ -47,7 +47,7 @@ Channel | Signal |
 
 #### Power-off with load
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/004.png)
+![Wavewform](../images/rev-b-tests/004.png)
 
 Channel | Signal |
 --- | ---
@@ -56,7 +56,7 @@ Channel | Signal |
 
 #### Zoom-in on the wake-up with load
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/005.png)
+![Wavewform](../images/rev-b-tests/005.png)
 
 Channel | Signal |
 --- | ---
@@ -64,13 +64,13 @@ Channel | Signal |
 
 Wake-up of 3.3V matches output voltage start-up shown in the datasheet:
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/006.png)
+![Wavewform](../images/rev-b-tests/006.png)
 
 #### Ripple without load
 
 According to the datasheet, at light load currents, the device operates in power save mode and the output voltage ripple is independent of the output capacitor value. The output voltage ripple is set by the internal comparator thresholds. The typical output voltage ripple is 1% of the output voltage, therefore we'd expect ripple of 33mVpp. The measured ripple is ~27mVpp.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/007.png)
+![Wavewform](../images/rev-b-tests/007.png)
 
 Channel | Signal |
 --- | ---
@@ -78,7 +78,7 @@ Channel | Signal |
 
 #### Ripple with 100mA load
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/008.png)
+![Wavewform](../images/rev-b-tests/008.png)
 
 Channel | Signal |
 --- | ---
@@ -88,7 +88,7 @@ The converter shows a very low ripple at 100mA load.
 
 #### Ripple with 15mA load
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/009.png)
+![Wavewform](../images/rev-b-tests/009.png)
 
 Channel | Signal |
 --- | ---
@@ -98,7 +98,7 @@ Channel | Signal |
 
 40mA current was chosen as a typical load current of the GPS module.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/010.png)
+![Wavewform](../images/rev-b-tests/010.png)
 
 Channel | Signal |
 --- | ---
@@ -128,15 +128,15 @@ Vin = 5.0V, RL=35 Ohm | 5.0043 | 67.09 | 3.3107 | 94.50 | 93.19%
 
 Dynamic load was tested with a fixed resistors, switched by a MOSFET. Switching frequency was 1kHz with duty cycle of 50%. A sense resistor of 1 Ohm was used to monitor the load current.
 
-![Dynamic load schematic](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/dynamic-load.png)
+![Dynamic load schematic](../images/rev-b-tests/dynamic-load.png)
 
 **Switching between 4.4mA and 52mA (743 Ohm and 62 Ohm)**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/011.png)
+![Wavewform](../images/rev-b-tests/011.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/012.png)
+![Wavewform](../images/rev-b-tests/012.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/013.png)
+![Wavewform](../images/rev-b-tests/013.png)
 
 Channel | Signal |
 --- | ---
@@ -147,11 +147,11 @@ The waveforms show ripple frequency and amplitude change when the load current c
 
 **Switching between 4.6mA and 87mA (714 Ohm and 33 Ohm)**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/014.png)
+![Wavewform](../images/rev-b-tests/014.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/015.png)
+![Wavewform](../images/rev-b-tests/015.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/016.png)
+![Wavewform](../images/rev-b-tests/016.png)
 
 Channel | Signal |
 --- | ---
@@ -160,7 +160,7 @@ Channel | Signal |
 
 There are spikes of approx. 200mV when the load current changes from 4.6mA to almost 100mA. According to the datasheet of TPS62203, such spikes are normal for large load current changes.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/017.png)
+![Wavewform](../images/rev-b-tests/017.png)
 
 #### Results and conclusions
 
@@ -174,7 +174,7 @@ According to the datasheet of the ORG1411 GPS, it can have inrush current of up 
 
 #### Wake-up
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/018.png)
+![Wavewform](../images/rev-b-tests/018.png)
 
 Channel | Signal
 --- | ---
@@ -186,7 +186,7 @@ Pulse duration on the output of the Schmitt trigger is 36.4ms. Start time of the
 
 #### On/off pulse on button press
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/019.png)
+![Wavewform](../images/rev-b-tests/019.png)
 
 Channel | Signal
 --- | ---
@@ -198,9 +198,9 @@ On/off pulse duration is around 254ms and depends on the time the button remains
 
 #### Button debouncing
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/020.png)
+![Wavewform](../images/rev-b-tests/020.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/021.png)
+![Wavewform](../images/rev-b-tests/021.png)
 
 Channel | Signal
 --- | ---
@@ -218,7 +218,7 @@ Push button debouncing circuit works as expected.
 
 #### Wake-up
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/022.png)
+![Wavewform](../images/rev-b-tests/022.png)
 
 Channel | Signal
 --- | ---
@@ -229,7 +229,7 @@ Channel | Signal
 
 #### Power-off
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/023.png)
+![Wavewform](../images/rev-b-tests/023.png)
 
 Channel | Signal
 --- | ---
@@ -244,7 +244,7 @@ Output enable circuit works as a latch. After WAKEUP signal of the GPS becomes H
 
 The AND gate has Smitt trigger inputs with VT+ in the range of 0.75-1.16V and VT- in the range of 0.5-0.85V.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/024.png)
+![Wavewform](../images/rev-b-tests/024.png)
 
 Channel | Signal
 --- | ---
@@ -255,7 +255,7 @@ Channel | Signal
 
 #### Output disable
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/025.png)
+![Wavewform](../images/rev-b-tests/025.png)
 
 Channel | Signal
 --- | ---
@@ -268,7 +268,7 @@ Channel | Signal
 
 U3 converts 1.8V logic levels from the GPS to 3.3V required by the camera.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/026.png)
+![Wavewform](../images/rev-b-tests/026.png)
 
 Channel | Signal
 --- | ---
@@ -284,7 +284,7 @@ Output enable and level shifting circuits work as expected.
 
 #### Wake-up with GPS assembled
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/031.png)
+![Wavewform](../images/rev-b-tests/031.png)
 
 Channel | Signal |
 --- | ---
@@ -295,7 +295,7 @@ Channel | Signal |
 
 #### Power-off with GPS assembled
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/032.png)
+![Wavewform](../images/rev-b-tests/032.png)
 
 Channel | Signal |
 --- | ---
@@ -306,7 +306,7 @@ Channel | Signal |
 
 #### GPS on
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/033.png)
+![Wavewform](../images/rev-b-tests/033.png)
 
 Channel | Signal |
 --- | ---
@@ -316,9 +316,9 @@ Channel | Signal |
 
 **Ripple of the 3.3V supply when GPS turns on**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/034.png)
+![Wavewform](../images/rev-b-tests/034.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/035.png)
+![Wavewform](../images/rev-b-tests/035.png)
 
 Channel | Signal |
 --- | ---
@@ -327,7 +327,7 @@ Channel | Signal |
 
 #### GPS off
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/036.png)
+![Wavewform](../images/rev-b-tests/036.png)
 
 Channel | Signal |
 --- | ---
@@ -337,9 +337,9 @@ Channel | Signal |
 
 **Ripple of the 3.3V supply when GPS turns off**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/037.png)
+![Wavewform](../images/rev-b-tests/037.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/038.png)
+![Wavewform](../images/rev-b-tests/038.png)
 
 Channel | Signal |
 --- | ---
@@ -351,7 +351,7 @@ Channel | Signal |
 
 **GPS on**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/039.png)
+![Wavewform](../images/rev-b-tests/039.png)
 
 Channel | Signal |
 --- | ---
@@ -362,7 +362,7 @@ Channel | Signal |
 
 **GPS off**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/040.png)
+![Wavewform](../images/rev-b-tests/040.png)
 
 Channel | Signal |
 --- | ---
@@ -373,7 +373,7 @@ Channel | Signal |
 
 #### Logic levels
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/041.png)
+![Wavewform](../images/rev-b-tests/041.png)
 
 Channel | Signal |
 --- | ---
@@ -388,13 +388,13 @@ The circuit with all the additional components consumes 43-47mA in acquisition m
 
 **Input current after power off**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/042.png)
+![Wavewform](../images/rev-b-tests/042.png)
 
 During the first 60 seconds the circuit is in the off mode and the input current is at its minimum of ~40uA. Then, during approx. 6 minutes, the circuit consumes ~40-45mA. Then, it is turned off and consumes ~40uA again.
 
 **Input current after turning the circuit off and on again**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/043.png)
+![Wavewform](../images/rev-b-tests/043.png)
 
 In this test the GPS was put to the standby state by the On/off button and then was put to the active state again. The acquisition state lasts approximately 20 seconds, then the module enters the tracking state and the circuit consumes ~25mA.
 
@@ -410,7 +410,7 @@ The aim of these tests is to measure the ripple voltage on the input voltage whi
 
 Input ripple when the GPS module is in hibernate state. In this state it consumes ~40uA and switching frequency of the buck converter is very low. The input voltage is 5.909V.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/044.png)
+![Wavewform](../images/rev-b-tests/044.png)
 
 Channel | Signal |
 --- | ---
@@ -420,7 +420,7 @@ Channel | Signal |
 
 In this mode the circuit draws ~47mA from the source. Voltage supplied by the camera is 5.695V.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/045.png)
+![Wavewform](../images/rev-b-tests/045.png)
 
 Channel | Signal |
 --- | ---
@@ -430,7 +430,7 @@ Channel | Signal |
 
 In this mode the circuit draws ~25mA from the source. Voltage supplied by the camera is 5.720V.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/046.png)
+![Wavewform](../images/rev-b-tests/046.png)
 
 Channel | Signal |
 --- | ---
@@ -442,15 +442,15 @@ These ripple voltages look high. They depend on the value of C5 whose value was 
 
 **GPS off**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/047.png)
+![Wavewform](../images/rev-b-tests/047.png)
 
 **Acquisition mode**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/048.png)
+![Wavewform](../images/rev-b-tests/048.png)
 
 **Tracking mode**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/049.png)
+![Wavewform](../images/rev-b-tests/049.png)
 
 Channel | Signal |
 --- | ---
@@ -464,23 +464,23 @@ Ripple voltages on the GPS module (U1 pin 4) were too high: 43.2mVpp, 56mvpp and
 
 **GPS off**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/050.png)
+![Wavewform](../images/rev-b-tests/050.png)
 
 The ripple is ~13mVpp not including the small spikes.
 
 **Acquisition mode**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/051.png)
+![Wavewform](../images/rev-b-tests/051.png)
 
 **Tracking mode**
 
 In the tracking mode the current of the GPS module changes many times per second. It can be seen on the amplitude and frequency of the ripple voltage. During the time of high current consumption the ripple falls to ~15mVpp and when the GPS current is low, the ripple can reach ~50mVpp. The GPS module has an internal LDO which should be able to deal with such ripple.
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/052.png)
+![Wavewform](../images/rev-b-tests/052.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/053.png)
+![Wavewform](../images/rev-b-tests/053.png)
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/054.png)
+![Wavewform](../images/rev-b-tests/054.png)
 
 Channel | Signal |
 --- | ---
@@ -488,7 +488,7 @@ Channel | Signal |
 
 **Tracking mode after acquiring position**
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/055.png)
+![Wavewform](../images/rev-b-tests/055.png)
 
 Channel | Signal |
 --- | ---
@@ -502,7 +502,7 @@ When the GPS is turned off, the output of U3 enters Hi-Z state and the voltage o
 
 #### GPS on
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/056.png)
+![Wavewform](../images/rev-b-tests/056.png)
 
 Channel | Signal |
 --- | ---
@@ -512,7 +512,7 @@ Channel | Signal |
 
 #### GPS off
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/057.png)
+![Wavewform](../images/rev-b-tests/057.png)
 
 Channel | Signal |
 --- | ---
@@ -522,7 +522,7 @@ Channel | Signal |
 
 #### Logic levels
 
-![Wavewform](https://raw.githubusercontent.com/4x1md/nikon_gps/master/images/rev-b-tests/058.png)
+![Wavewform](../images/rev-b-tests/058.png)
 
 Channel | Signal |
 --- | ---
