@@ -59,7 +59,7 @@ The tests were done in order to verify the assembled circuit. Refer to [developm
 
 ### ORG1411 GPS Module On/Off Tests
 
-The on/off sequence of the ORG1411 GPS module was tested in order to understand how to connect an external on/off button to the module. Refer to [on-off-tests.md](docs/on-off-tests.md) for details.
+The on/off sequence of the ORG1411 GPS module was tested in order to understand how to connect an external on/off button to the module. Refer to [gps-on-off-tests.md](docs/gps-on-off-tests.md) for details.
 
 ### Revision B Tests
 
