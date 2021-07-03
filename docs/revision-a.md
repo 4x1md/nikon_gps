@@ -6,7 +6,7 @@ This document shows the first version of the project.
 
 ## Schematics
 
-![Schematics](../images/rev-a/rev-a-schematics.png)
+![Schematics](../images/revision-a/rev-a-schematics.png)
 
 ## Mechanics
 
