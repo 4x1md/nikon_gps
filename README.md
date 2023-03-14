@@ -1,6 +1,10 @@
 # DIY GPS Module for Nikon DSLR
 
-External GPS module for Nikon DSLR.
+The Nikon GPS project is a compact and lightweight DIY module which adds GPS functionality to Nikon DSLR cameras. It adds the ability to record location data for each photo in the EXIF and later view it on a map.
+
+The module is attached to the flash hot shoe mount and connects to the camera's dedicated GPS port. The GPS gets its power from the camera and transmits the received GPS NMEA sentences using UART at 4800 bps. It also features an on/off button and a LED indicator which shows when the GPS module is active.
+
+The project was created mostly to advance my DIY and electronics skills.
 
 ## Overview
 
